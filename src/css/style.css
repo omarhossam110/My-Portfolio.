@@ -466,6 +466,11 @@ h6 {
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 36em) {
+  .about__info-description {
+    justify-content: center;
+  }
+}
 .about__info-title {
   display: inline-block;
   width: 160px;
@@ -478,6 +483,11 @@ h6 {
 @media only screen and (max-width: 48em) {
   .about__info-title {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .about__info-title {
+    width: 0;
   }
 }
 .about__info-svg {

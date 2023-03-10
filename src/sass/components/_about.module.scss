@@ -127,6 +127,9 @@
       display: flex;
       justify-content: space-around;
     }  
+    @include respond(phone) {
+      justify-content: center;
+    }  
   }
 
   &__info-title {
@@ -139,6 +142,9 @@
     position: relative;
     @include respond(tab-port-small) {
       font-size: 2rem;
+    }  
+    @include respond(phone) {
+      width: 0;
     }  
   }
 
