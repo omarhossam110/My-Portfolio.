@@ -1,0 +1,270 @@
+.row{  
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    // justify-content: space-around;
+
+    @include clearfix;
+
+}
+
+[class^="col-"]{
+
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    // &:not(:last-child){
+    //     margin-right: $gutter-horizontal;
+
+    //     @include respond(tab-port){ 
+    //         margin-right: 0;
+    //         margin-bottom:  $gutter-vertical-small;
+    //     }
+    // }
+
+    // @include respond(tab-port){ 
+    //    width: 100% !important;
+    //  }
+}
+
+.container{
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond(normal-desktop){
+            max-width: 114rem;}
+       
+    @include respond(tab-land) {
+            max-width: 96rem;}
+
+    @include respond(tab-port) {
+            max-width: 96rem;}
+
+    @include respond(tab-port-small) {
+            max-width: 72rem;}
+
+    @include respond(phone) {
+            max-width: 54rem;}
+
+    @include respond(big-desktop){
+           max-width: 117rem;}   
+           
+           
+
+        .col-1-of-2{
+            -webkit-box-flex: 0;            
+            -ms-flex: 0 0 calc((100% - 10%)/2);
+            flex: 0 0 calc((100% - 10%)/2);
+        
+            @include respond(tab-land) {
+             -ms-flex: 0 0 calc((100% - 10%)/2);
+             flex: 0 0 calc((100% - 10%)/2);}
+        
+            @include respond(tab-port) {
+             -ms-flex: 0 0 calc((100% - 12%)/2);
+             flex: 0 0 calc((100% - 12%)/2);}
+
+            @media only screen and (max-width: 50.375em){
+                -ms-flex: 0 0 calc((100% - 15%)/2);
+                flex: 0 0 calc((100% - 15%)/2);
+             }
+        
+            @include respond(tab-port-small) {
+             -ms-flex: 0 0 calc((100% - 18%)/2);
+             flex: 0 0 calc((100% - 18%)/2);}
+        
+            @include respond(phone) {
+             -ms-flex: 0 0 calc((100% - 24%)/2);
+             flex: 0 0 calc((100% - 24%)/2);}
+        
+            @include respond(big-desktop){
+             -ms-flex: 0 0 calc((100% - 10%)/2);
+             flex: 0 0 calc((100% - 10%)/2);}   
+        }
+
+        .col-1-of-3{
+            -webkit-box-flex: 0;            
+            -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+            flex: 0 0 calc((100% - 2 * 10%)/3);
+
+            @include respond(tab-land) {
+                -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+                flex: 0 0 calc((100% - 2 * 10%)/3);}
+           
+               @include respond(tab-port) {
+                -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+                flex: 0 0 calc((100% - 2 * 10%)/3);}
+           
+               @include respond(tab-port-small) {
+                -ms-flex: 0 0 calc((100% - 2 * 12%)/3);
+                flex: 0 0 calc((100% - 2 * 12%)/3);}
+           
+               @include respond(phone) {
+                -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+                flex: 0 0 calc((100% - 2 * 10%)/3);}
+           
+               @include respond(big-desktop){
+                -ms-flex: 0 0 calc((100% - 10%)/2);
+                flex: 0 0 calc((100% - 10%)/2);}  
+        }
+        
+        .col-2-of-3{
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 calc( 2 * ((100% - 2 * 10%)/3) + 10% );
+            flex: 0 0 calc( 2 * ((100% - 2 * 10%)/3) + 10% );
+
+            @include respond(tab-land) { 
+                -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+                flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+           
+               @include respond(tab-port) {
+                -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+                flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+           
+               @include respond(tab-port-small) {
+                -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+                flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+           
+               @include respond(phone) {
+                -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+                flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+           
+               @include respond(big-desktop){
+                -ms-flex: 0 0 calc((100% - 10%)/2);
+                flex: 0 0 calc((100% - 10%)/2);}   
+        }
+
+        .col-1-of-4{
+            -ms-flex: 0 0 calc((100% - 3 * 2%)/4);
+            flex: 0 0 calc((100% - 3 * 2%)/4);
+        }
+
+        .col-2-of-4{
+            // width: calc( 2 * ((100% - 3 * #{$gutter-horizontal})/4) + #{$gutter-horizontal} );
+
+            -ms-flex: 0 0 calc( 2 * ((100% - 3 * 10%)/4) + 10% );
+            flex: 0 0 calc( 2 * ((100% - 3 * 10%)/4) + 10% );
+        }
+
+        .col-3-of-4{
+            -ms-flex: 0 0 calc( 3 * ((100% - 3 * 12.4119%)/4) + 2 * 10% );
+            flex: 0 0 calc( 3 * ((100% - 3 * 12.4119%)/4) + 2 * 10% );
+        }
+
+        .col-4-of-4{
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        }
+}
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .col-1-of-2{
+        -webkit-box-flex: 0;     
+        -ms-flex: 0 0 calc((100% - 10%)/2);
+        flex: 0 0 calc((100% - 6%)/2);
+        padding-right: 10px;
+        padding-left: 10px;
+    
+        @include respond(tab-land) {
+         -ms-flex: 0 0 calc((100% - 6%)/2);
+         flex: 0 0 calc((100% - 6%)/2);}
+    
+        @include respond(tab-port) {
+         -ms-flex: 0 0 calc((100% - 6%)/2);
+         flex: 0 0 calc((100% - 6%)/2);}
+    
+        @include respond(tab-port-small) {
+         -ms-flex: 0 0 calc((100% - 9%)/2);
+         flex: 0 0 calc((100% - 9%)/2);}
+    
+        @include respond(phone) {
+         -ms-flex: 0 0 calc((100% - 9%)/2);
+         flex: 0 0 calc((100% - 9%)/2);}
+    
+        @include respond(big-desktop){
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;}   
+    }
+
+    .col-1-of-3{
+        -webkit-box-flex: 0;            
+        -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+        flex: 0 0 calc((100% - 2 * 10%)/3);
+
+        @include respond(tab-land) {
+            -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+            flex: 0 0 calc((100% - 2 * 10%)/3);}
+       
+           @include respond(tab-port) {
+            -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+            flex: 0 0 calc((100% - 2 * 10%)/3);}
+       
+           @include respond(tab-port-small) {
+            -ms-flex: 0 0 calc((100% - 2 * 12%)/3);
+            flex: 0 0 calc((100% - 2 * 12%)/3);}
+       
+           @include respond(phone) {
+            -ms-flex: 0 0 calc((100% - 2 * 10%)/3);
+            flex: 0 0 calc((100% - 2 * 10%)/3);}
+       
+           @include respond(big-desktop){
+            -ms-flex: 0 0 calc((100% - 10%)/2);
+            flex: 0 0 calc((100% - 10%)/2);}  
+    }
+    
+    .col-2-of-3{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc( 2 * ((100% - 2 * 10%)/3) + 10% );
+        flex: 0 0 calc( 2 * ((100% - 2 * 10%)/3) + 10% );
+
+        @include respond(tab-land) { 
+            -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+            flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+       
+           @include respond(tab-port) {
+            -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+            flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+       
+           @include respond(tab-port-small) {
+            -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+            flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+       
+           @include respond(phone) {
+            -ms-flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );
+            flex: 0 0 calc( 2 * ((100% - 2 * #{$gutter-horizontal})/3) + #{$gutter-horizontal} );}
+       
+           @include respond(big-desktop){
+            -ms-flex: 0 0 calc((100% - 10%)/2);
+            flex: 0 0 calc((100% - 10%)/2);}   
+    }
+
+    .col-1-of-4{
+        -ms-flex: 0 0 calc((100% - 3 * 10%)/4);
+        flex: 0 0 calc((100% - 3 * 10%)/4);
+    }
+
+    .col-3-of-4{
+        -ms-flex: 0 0 calc( 3 * ((100% - 3 * 10%)/4) + 2 * 10% );
+        flex: 0 0 calc( 3 * ((100% - 3 * 10%)/4) + 2 * 10% );
+    }
+
+    .col-4-of-4{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+
+}

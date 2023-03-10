@@ -1,0 +1,116 @@
+.footer {
+    background-color: #212529;
+    padding: 10rem 0;
+    // min-height: 45rem;
+    font-size: 1.4rem;
+    color: var(--color-gray-light-1);
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    &__Box {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+
+    &__contact {
+
+        // display: inline-block;
+        //  width: 80%;
+        @include respond(tab-port) {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+
+    &__list {
+        border-top: 1px solid var(--color-gray-dark);
+        padding-top: 2rem;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:first-child) {
+            border-left: 1px solid #fff;
+            padding-left: 10px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: var(--color-gray-light-1);
+            background-color: #212529;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            transition: all .2s ease-in-out;
+        }
+
+        &-Gmail{
+            fill: var(--color-gray-light-1);
+            margin-right: 2px;
+        }
+
+        &-LinkedIn{
+            fill: var(--color-gray-light-1);
+            margin-right: 2px;
+        }
+
+        &-GitHup{
+            fill: var(--color-gray-light-1);
+            margin-right: 2px;
+        }
+
+        &:hover,
+        &:active {
+            // color: var(--color-primary);
+            box-shadow: 0 1rem 2rem rgba(var(--color-black), .4);
+            transform: rotate(5deg) scale(1.2);
+        }
+
+
+
+        &:hover .footer__link-Gmail{
+            fill: 	#e03f39;
+        }
+        &:hover .footer__link-LinkedIn{
+            fill: 	#0e76a8;         
+        }
+        &:hover .footer__link-GitHup{
+            fill: 	#e4a621;
+        }
+    }
+
+    &__copyright {
+        // float: right;
+        // margin-top: 5rem;
+        // width: 80%;
+
+        @include respond(tab-port) {
+            margin-top: 5rem;
+            width: 80%;
+        }
+    }
+
+    &__copyright-p {
+        border-top: 1px solid var(--color-gray-dark);
+        // padding-top: .5rem;
+        text-transform: capitalize;
+    }
+}
+
+
+// --bs-light-rgb: rgb(248,249,250);

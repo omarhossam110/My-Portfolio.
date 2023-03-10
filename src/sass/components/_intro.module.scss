@@ -1,0 +1,48 @@
+.intro{
+    // padding-top: 3rem;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/src/assets/images/intro.png) center top no-repeat;
+    background-size: auto;
+    background-color: #16143a;
+    
+
+    &__text{
+        position: absolute;
+        left: 0;
+        top: 6rem;
+        right: 0;
+        height: calc(50% - 6rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    &__text-h2{
+        font-size: 5rem;
+        letter-spacing: 1.5rem;
+
+        @include respond(tab-port) {
+            letter-spacing: 1rem;
+            font-size: 6rem;
+          }
+       
+         @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 6rem;
+          }
+    }
+
+    &-btn{
+        transition: all .5;
+       &:hover{
+        color: var(--color-white);
+       } 
+    }
+}

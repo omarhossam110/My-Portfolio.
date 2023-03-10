@@ -1,0 +1,233 @@
+.portfolio{
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;
+
+    display: flex;
+    justify-content: center;
+
+    &__Box{
+        padding: 4rem 2rem 3rem 2rem;
+        width: 90%;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
+
+        &-title {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__intro {
+        background-color: var(--color-primary);
+        padding: 3px 0px;
+        border-radius: 10px;
+        margin-bottom: 5rem;
+        margin-top: 6rem;
+        font-size: 2.5rem;
+        // font-family: 'Dancing Script', cursive;
+        color: var(--color-white);
+
+        span {
+            background-image: linear-gradient(to right, var(--color-secondary-light), var(--color-secondary-dark));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &-2{
+            margin-top: 7rem; 
+        }
+        
+    }
+
+
+    &__left-card {
+        margin-top: 3rem;
+
+        @include respond(tab-land) {
+            margin-top: 8rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__right-card {
+        margin-top: 17rem;
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include respond(tab-port-small) {
+            margin-top: 8rem;
+
+        }
+    }
+
+    &__card {
+        // .pic
+        height: 50rem;
+        background-size: cover;
+        background-position-y: 0;
+        width: 100%;
+        box-shadow: 0px 5px 20px gray;
+        border-radius: 1%;
+        transition: all .5s;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+
+        @include respond(tab-land) {
+            height: 55rem;
+            width: 80%;
+        }
+
+        @include respond(tab-port) {
+            height: 52rem;
+            width: 80%;
+        }
+
+        @include respond(tab-port-small) {
+            display: flex;
+            justify-content: center;
+            height: 52rem;
+            width: 75%;
+        }
+
+        @include respond(phone) {
+            display: flex;
+            justify-content: center;
+            height: 52rem;
+            width: 70%;
+        }
+
+        &:hover {
+            transition: all 4s ease-in-out;
+            background-position-y: 100%;
+        }
+
+        
+        // &-img{
+        //     // height: 100%;
+        //     // background-size: cover;
+        //     // background-position-y: 0;
+        //     // width: 100%;  
+        //     img{
+        //         max-width:100%;
+        //         display: inline;
+        //     }     
+        // }
+
+        // &:hover .portfolio__card-img {
+        //     transition: all 4s ease-in-out;
+        //     animation-name: moveInBottom;
+        //     animation-duration: 12s;
+        //     /* animation-delay: 3s; */
+        //     /* animation-iteration-count: 3; */
+        //     // animation-timing-function: ease-out;
+        // }
+
+        //  h2
+        &-title {
+            text-align: left;
+            font-size: 12rem;
+            margin-bottom: -3rem;
+            color: #a6cdf7;
+            font-weight: 700;
+        }
+
+
+        &:hover .portfolio__card-content {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        &:hover .portfolio__card-button {
+            opacity: 1;
+        }
+    }
+
+    // .box-content
+    &__card-content {
+        width: 100%;
+        // height: 35.7rem;
+        height: 72%;
+        background: 0 0;
+        padding-top: 25%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // transition: all .3s ease 0s;
+
+        @include respond(tab-land) {
+            height: 86%;
+        }
+
+        @include respond(tab-port) {
+            height: 86%;
+        }
+
+        @include respond(tab-port-small) {
+            height: 69%;
+        }
+
+        @include respond(phone) {
+            height: 74%;
+        }
+    }
+
+    &__card-button {
+
+        background-color: transparent;
+        border: 0;
+        padding: 0px 30px;
+        opacity: 0;
+        // font-family: 'Dancing Script', cursive;
+
+        a {
+            border: none;
+            outline: none;
+            font-size: 5rem;
+            color: #fff;
+            // transform: scale(0);
+            transition: all .2s ease 0s;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            border: 5px solid gray;
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, .5),
+                -5px -5px 15px rgba(255, 255, 255, .5);
+        }
+
+    }
+
+    &__image1 {
+        // transition: all 4s ease-in-out;
+        background-image: url(/src/assets/images/natours.png);
+    }
+
+    &__image2 {
+        // transition: all 4s ease-in-out;
+        background-image: url(/src/assets/images/trillo.png);
+    }
+
+    &__image3 {
+        // transition: all 4s ease-in-out;
+        background-image: url(/src/assets/images/avilon.png);
+    }
+
+    &__image4 {
+        // transition: all 4s ease-in-out;
+        background-image: url(/src/assets/images/EXPENSETRAKER.png);
+    }
+
+    &__image5 {
+        background-image: url(/src/assets/images/todolist.png);
+    }
+}

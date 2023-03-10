@@ -1,0 +1,79 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+}
+
+// MEDIA QUERY MANAGER
+/* 
+0 - 600px;       phone
+600 - 900px;     tablet
+900 - 1200px;    tablet
+[1200 - 1800px]; is where the normal style apply
+1800px + ;       Big Desktop
+      
+
+// $Breakpoint Arguement Choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+  
+
+  * Important *
+  // ems are the Best Opthion for Media Queries (not rems) 
+    *Note:
+          * 1em = 16px *
+    
+      *ex:
+           600px / 16px = 37.5em and so on...  
+           
+           
+ // ORDER OF THE CHANGES:
+           base + typography > 
+           genral layout + grid >
+           page layout >
+           componenents 
+*/
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone {  
+        @media only screen and (max-width: 36em) { @content }; //576px
+    } 
+
+    @else if $breakpoint == tab-port-small {
+        @media only screen and (max-width: 48em) { @content }; //768px
+    }
+
+    @else if $breakpoint == tab-port {
+        @media only screen and (max-width: 62em) { @content }; //992px
+    }
+
+    @else if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+
+    @else if $breakpoint == normal-desktop {
+        @media only screen and (min-width: 75em) { @content }; // from 1200px up to 1800
+    }
+    
+    @else if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content } ; //1800 +
+    }
+}
+
+// we creat the MEDIA QUERY MANAGER mixin with a group of 
+// if statments that definds the breakpoints 
+// then we include it in the base sass file multiple times,
+// one for each breakpoint and pass the values 
+// through the Arguements.
