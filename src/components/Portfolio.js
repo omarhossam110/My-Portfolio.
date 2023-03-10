@@ -29,7 +29,7 @@ const Portfolio = () => {
 
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}> 
-                  <a href="https://resturant10.netlify.app/"
+                  <a href="#1"
                       className="title"
                       target="_blank" rel="noreferrer">View</a>
                   </button>
@@ -49,7 +49,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://e-bussenis.netlify.app/"
+                      href="#2"
                       target="_blank"
                       className="title"
                       rel="noreferrer">
@@ -68,7 +68,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://fitnez.netlify.app/"
+                      href="#3"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
@@ -131,7 +131,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://colorpicked.netlify.app/"
+                      href="#4"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
@@ -150,7 +150,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://frescas.netlify.app/"
+                      href="#5"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
