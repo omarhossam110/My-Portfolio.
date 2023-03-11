@@ -17,8 +17,7 @@ const Personal = () => {
                 </div>
                 <h3>Presentation Skills</h3>
                 <p>
-                  I can design any website with easly, high quality, lowest
-                  prices, and the least time .
+                   I can make detailed presentations and present them to the team.
                 </p>
               </div>
             </div>
@@ -31,8 +30,7 @@ const Personal = () => {
                 </div>
                 <h3>Team Work</h3>
                 <p>
-                  I can make any site responsive to all screens and sizes in an
-                  amazing way .
+                   I love to work in a team and this helps me to improve my skills
                 </p>
               </div>
             </div>
@@ -46,7 +44,7 @@ const Personal = () => {
                 </div>
                 <h3>Time Management</h3>
                 <p>
-                  I can design any website with a fast time, high quality,Please feel free to contact me .
+                I can divide my time carefully and complete my tasks on time.
                 </p>
               </div>
             </div>
