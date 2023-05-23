@@ -13,16 +13,19 @@ const TechnicalCard = (props) => {
                 <circle cx="70" cy="70" r="70"></circle>
                 <circle cx="70" cy="70" r="70"></circle>
               </svg>
-              <div className={`percent__number`}>
+
+              <div className={`percent__text`}>
                 <h2>
-                  {skill.percent}
-                  <span> %</span>
+                  {/* {skill.percent}
+                  <span> %</span> */}
+                    {skill.title}
                 </h2>
               </div>
+
             </div>
-            <h2 className={`technical__card-text`}>
-              {skill.title}
-            </h2>
+            {/* <h2 className={`technical__card-text`}> */}
+              {/* {skill.title} */}
+            {/* </h2> */}
           </div>
         </div>
       ))}

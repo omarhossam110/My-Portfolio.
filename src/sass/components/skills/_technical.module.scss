@@ -100,21 +100,21 @@
             stroke-dashoffset: 40;
         }
 
-        &:hover .percent__number h2 {
+        &:hover .percent__text h2 {
             color: #fff;
             // font-size: 50px;
             z-index: 1001;
         }
 
-        &:hover .percent__number h2 span {
-            color: #fff;
-            z-index: 1001;
-        }
+        // &:hover .percent__number h2 span {
+        //     color: #fff;
+        //     z-index: 1001;
+        // }
 
-        &:hover .technical__card-text {
-            color: #fff;
-            transition: 0.5s;
-        }
+        // &:hover .technical__card-text {
+        //     color: #fff;
+        //     transition: 0.5s;
+        // }
 
         // &:hover .technical__svg circle {
         //     stroke: #fff;
@@ -122,16 +122,16 @@
         // }
     }
 
-    &__card-text {
-        position: relative;
-        color: #777;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: 0.5s;
-        margin-top: 20px;
-    }
+    // &__card-text {
+    //     position: relative;
+    //     color: #777;
+    //     font-weight: 700;
+    //     font-size: 18px;
+    //     letter-spacing: 1px;
+    //     text-transform: uppercase;
+    //     transition: 0.5s;
+    //     margin-top: 20px;
+    // }
 
     &__svg {
         position: relative;
@@ -170,7 +170,7 @@
     background: transparent;
     z-index: 1000;
 
-    &__number {
+    &__text {
         position: absolute;
         top: 0;
         left: 0;
@@ -184,7 +184,7 @@
         h2 {
             color: #777;
             font-weight: 700;
-            font-size: 40px;
+            font-size: 23px;
             transition: 0.5s;
             margin: 0;
 
