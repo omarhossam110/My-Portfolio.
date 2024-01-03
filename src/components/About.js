@@ -39,8 +39,7 @@ const About = () => {
             <div className={`about__info col-md-5 col-sm-12 p-0`}>
               <div className={`about__info-padding`}>
                 <p className={`about__paragraph`}>
-                  Hello, My Name is Omar Hossam, I'm 25 years old frontend
-                  developer from Cairo, Here is some information about me.
+                “Hello, my name is Omar Hossam. I’m a 25 years old Frontend Developer from Cairo. Here are some information about me:
                 </p>
 
                 <div className={`about__content`}>
