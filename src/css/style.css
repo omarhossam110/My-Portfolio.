@@ -913,6 +913,9 @@ h6 {
 .portfolio__image5 {
   background-image: url(/src/assets/images/todolist.png);
 }
+.portfolio__image6 {
+  background-image: url(/src/assets/images/movies-box.png);
+}
 
 .navigation__checkbox {
   display: none;

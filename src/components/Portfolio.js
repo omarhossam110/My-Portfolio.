@@ -12,6 +12,8 @@ const Portfolio = () => {
         
           <div className="row justify-content-between"> 
 
+
+
             <div className="col-sm-12 p-0">
               <h5 className={`portfolio__intro`}>Templates Created with 
               <span> SASS</span>
@@ -80,43 +82,8 @@ const Portfolio = () => {
               </div>
             </div>
 
-            
-            {/* <div className={`portfolio__right-card`}  me-md-5  col-md-5  col-sm-12 p-0`}>
-              <h2 className={`portfolio__card-title`}>04</h2>
-              <div className={`portfolio__card}`}>
-                <div className={`portfolio__card-content`}>
-                  <button className={`portfolio__card-button`}>
-                    <a
-                      href="https://adoring-einstein-29bce8.netlify.app/"
-                      target="_blank"
-                      className="title"
-                      rel="noreferrer"
-                    >
-                      View
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div> */}
 
-            
-            {/* <div  className={`portfolio__left-card`} ms-md-5  col-md-5 col-sm-12 p-0`}>
-              <h2 className={`portfolio__card-title`}>05</h2>
-              <div className={`portfolio__card image9`}>
-                <div className={`portfolio__card-content`}>
-                  <button className={`portfolio__card-button`}>
-                    <a
-                      href="https://coffe5.netlify.app/"
-                      target="_blank"
-                      className="title"
-                      rel="noreferrer"
-                    >
-                      View
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div> */}
+
 
             <div className="col-sm-12 p-0 aos-init" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
               <h5 className={`portfolio__intro`}>Small Projects with
@@ -161,6 +128,34 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+
+
+
+
+            <div className="col-sm-12 p-0 aos-init" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
+              <h5 className={`portfolio__intro`}>Large Projects with
+              <span> React-js</span>
+              </h5>
+            </div>
+
+            <div className={`portfolio__left-card ms-md-5  col-md-5 col-sm-12 p-0 aos-init`} data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in">
+              <h2 className={`portfolio__card-title`}>01</h2>
+              <div className={`portfolio__card portfolio__image6`}>
+                <div className={`portfolio__card-content`}>
+                  <button className={`portfolio__card-button`}>
+                    <a
+                      href="https://movies-box-chi.vercel.app/"
+                      target="_blank"
+                      className="title"
+                      rel="noreferrer"
+                    >
+                      View
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
 
           </div>
        
