@@ -29,7 +29,7 @@ const Portfolio = () => {
 
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}> 
-                  <a href="https://github.com/omarhossam110/1-Natours"
+                  <a href="https://1-natours-oh.netlify.app"
                       className="title"
                       target="_blank" rel="noreferrer">View</a>
                   </button>
