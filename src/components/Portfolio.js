@@ -98,7 +98,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://github.com/omarhossam110/Expenses-tracker"
+                      href="https://expenses-tracker-oh.netlify.app/"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
