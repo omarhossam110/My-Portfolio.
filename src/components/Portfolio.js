@@ -129,23 +129,23 @@ const Portfolio = () => {
             </div>
 
         
-            <div  className={`portfolio__right-card me-md-5  col-md-5  col-sm-12 p-0 aos-init`} data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in">
+            {/* <div  className={`portfolio__right-card me-md-5  col-md-5  col-sm-12 p-0 aos-init`} data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in">
               <h2 className={`portfolio__card-title`}>03</h2>
               <div className={`portfolio__card portfolio__image5`}>
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
-                    {/* <a
+                    <a
                       href="#5"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
                     >
                       View
-                    </a> */}
+                    </a>
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
 
 
 
