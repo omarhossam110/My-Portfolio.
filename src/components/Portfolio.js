@@ -110,9 +110,27 @@ const Portfolio = () => {
               </div>
             </div>
 
+            <div className={`portfolio__left-card ms-md-5  col-md-5 col-sm-12 p-0 aos-init`} data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in">
+              <h2 className={`portfolio__card-title`}>02</h2>
+              <div className={`portfolio__card portfolio__image7`}>
+                <div className={`portfolio__card-content`}>
+                  <button className={`portfolio__card-button`}>
+                    <a
+                      href="https://github.com/omarhossam110/The_React_Quiz"
+                      target="_blank"
+                      className="title"
+                      rel="noreferrer"
+                    >
+                      View
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
         
             <div  className={`portfolio__right-card me-md-5  col-md-5  col-sm-12 p-0 aos-init`} data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in">
-              <h2 className={`portfolio__card-title`}>02</h2>
+              <h2 className={`portfolio__card-title`}>03</h2>
               <div className={`portfolio__card portfolio__image5`}>
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>

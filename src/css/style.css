@@ -916,6 +916,9 @@ h6 {
 .portfolio__image6 {
   background-image: url(/src/assets/images/movies-box.png);
 }
+.portfolio__image7 {
+  background-image: url(/src/assets/images/TheReactQuiz.png);
+}
 
 .navigation__checkbox {
   display: none;
