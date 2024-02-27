@@ -116,7 +116,7 @@ const Portfolio = () => {
                 <div className={`portfolio__card-content`}>
                   <button className={`portfolio__card-button`}>
                     <a
-                      href="https://github.com/omarhossam110/The_React_Quiz"
+                      href="https://the-react-quiz-oh.netlify.app/"
                       target="_blank"
                       className="title"
                       rel="noreferrer"
